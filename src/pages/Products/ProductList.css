@@ -1,21 +1,41 @@
+.centered-content{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: url("../../images/backgroundNotebook.jpeg");
+
+}
+
 .cocktails-center {
-    width: var(--smallWidth);
+    width: 100%;
     margin: 0 auto;
     max-width: var(--fullWidth);
     display: grid;
-    row-gap: 5rem;
-    column-gap: 4rem;
+    row-gap: 2rem;
+    column-gap: 1rem;
     padding: 20px;
-    background: url("../../images/backgroundNotebook.jpeg");
-    grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));  
+    align-items: center;
+    justify-items: center; /* Centers grid items horizontally */
   }
+  @media screen and (max-width: 476px) {
+
+    .cocktails-center {
+     
+    }
+    .cocktail img {
+      height: 26vw;
+      width: 26vw;
+    }
+  }
+  
 
   .cocktail:hover {
-    box-shadow: var(--darkShadow);
     border-radius: 20px;
   }
   .cocktail img {
-    height: 16rem;
+    max-height: 12rem;
+    height: 36vw;
     object-fit:contain;
     border-top-left-radius: var(--mainBorderRadius);
     border-top-right-radius: var(--mainBorderRadius);
@@ -25,7 +45,9 @@
     border-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    ÷max-width: min(60vw, 300px); /* Example max width, adjust as needed */
+    width: 60vw; 
+    align-items: center;
 }
 
 .cocktail a{

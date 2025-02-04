@@ -9,6 +9,9 @@ const ProductList = () => {
   return (
     <>
     
+      
+      <div className="centered-content">
+
       <div className="cocktails-center">
         {products.map((product) => {
           const { id, image, name, price } = product;
@@ -17,7 +20,7 @@ const ProductList = () => {
               <Link
                       to={`/products/${id}`}
                       className="add-cart"
-                    >
+                      >
               <div className="img-container">
                 <img src={image} alt={name} />
                 </div>
@@ -38,6 +41,7 @@ const ProductList = () => {
             </article>
           );
         })}
+      </div>
       </div>
     </>
   );
