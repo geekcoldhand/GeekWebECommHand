@@ -19,21 +19,16 @@ const SingleProduct = () => {
             <img className="prod-photo" src={image} alt={name} />
             <section className="content-prod">
               <h2>{name}</h2>
-              <span class="fa fa-star review"></span>
-              <span class="fa fa-star review"></span>
-              <span class="fa fa-star review"></span>
-              <span class="fa fa-star review"></span>
-              <span class="fa fa-star-half-o review"></span>
+              {{ stock } && <AddToCart product={products} />}
+              <p className="description"> {description}</p>
+            
         
               <h5 className="price-prod">${price}</h5>
-              <p className="description"> {description}</p>
+              <h5 className="price-prod">Size Chart</h5>
               <p className="info-prod">
                 <span>Available : </span>
                 In stock
               </p>
-
-              <hr />
-              {{ stock } && <AddToCart product={products} />}
             </section>
           </div>
         );

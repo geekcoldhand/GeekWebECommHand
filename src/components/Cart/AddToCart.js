@@ -31,12 +31,12 @@ const AddToCart = React.memo(function AddToCart ({ product }) {
 
   return (
     <div className="btn-container">
-      <AmountButtons amount={amount} inc={increase} dec={decrease} />
+      
       <Link
         className="add-cart"
         onClick={() => addToCart(id, amount, product)}
       >
-        Add to cart
+        Place in Cart
       </Link>
       
     </div> 

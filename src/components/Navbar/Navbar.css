@@ -67,14 +67,10 @@ animation: Grow 3s infinite;
   border-color: var(--primaryLightColor)
 }
 .links a {
-  background: var(--bg-color);
-  border-radius: 50px;
-  box-shadow: 20px 20px 60px var(--shadow-color),
-              -20px -20px 60px var(--highlight-color);
   padding: 2px;
   transition: all 0.2s ease-in-out;
   margin-inline: 1rem;
-
+  color: #000;
 }
 
 .links {

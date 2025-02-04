@@ -23,6 +23,9 @@
 .cocktail{
     border-radius: 20px;
     border-style: none;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
 .cocktail a{
